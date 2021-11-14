@@ -1,0 +1,238 @@
+.screening-table{
+    max-width: 100%;
+    margin:25px 0;
+}
+
+th:first-child{
+    width:25%;
+}
+th:nth-child(2){width:7.5%;}
+th:nth-child(3){width:15%;}
+th:nth-child(4){width:10%;}
+th:nth-child(5){width:10%;}
+th:nth-child(6){width:10%;}
+th:nth-child(7){width:10%;}
+th:nth-child(8){width:7.5%;}
+th:nth-child(9){
+    width:5%;
+}
+th:nth-child(9):hover{
+    cursor: auto;
+}
+#add-screening{
+    left:65%;
+}
+.delete-screening{
+    background: url("../img/minus.png");
+    height:25px;
+    width:25px;
+    margin:0 auto;
+    display:block;
+}
+
+#ticketForm p {
+    position:relative;
+    left:0;
+    top:-45px;
+}
+.retract-div{
+    background: url("../img/minus.png");
+    height:24px;
+    width:24px;
+    visibility: visible;
+    display: inline-block;
+    float:left;
+}
+.expand-div{
+    background: url("../img/plus.png");
+    width:24px;
+    height:24px;
+    visibility: visible;
+    display: inline-block;
+    float:left;
+
+}
+.edit-screening-container{
+    border:1px solid red;
+    width:90%;
+    height:250px;
+    margin:-110px auto 0 auto;
+}
+.edit-screening{
+    background: url("../img/edit.png");
+    visibility: visible;
+    width:24px;
+    height:24px;
+    float:right;
+}
+.expand-div:hover, .retract-div:hover, .delete-screening:hover, .edit-screening:hover{
+    cursor: pointer;
+    filter: brightness(3);
+}
+.ticket-form{
+    border:1px solid rgba(128, 128, 128, 0.71);
+    box-shadow: 1px 1px rgba(128, 128, 128, 0.71);
+    padding:35px;
+    width:70%;
+    grid-template-columns: 40% 60%;
+    display: grid;
+    text-align: left;
+    align-items: center;
+    grid-row-gap:10px;
+    margin: 0 auto;
+    grid-template-rows: repeat(3,40px) 80px;
+}
+.screening-form{
+    width:80%;
+    margin:0 auto;
+}
+.screening-form input{
+    width:100%;
+    height:100%;
+    text-align: center;
+    background-color: rgba(253, 253, 253, 0);
+    color:#fff;
+    font-size: 18px;
+}
+.screening-form td{
+    background-color: rgba(253, 253, 253, 0);
+}
+
+.screening-form tr:hover{
+    background: none;
+}
+
+.screening-form input:focus{
+    outline: none;
+}
+.screening-form th:first-child{
+    width:5%;
+}
+
+
+.confirmation{
+    text-align: center;
+    padding:25px;
+}
+
+#confirm-ticket{
+    grid-column-start: 2;
+    margin-left:50%;
+    width:50%
+}
+.ticket-form input{height:35px;border-radius: 5px;}
+
+.conDivRetract{
+    width : 95%;
+    margin : 0 auto;
+    align-items: center;
+    height:auto;
+    padding-top:50px;
+}
+.conDivRetract:first-child{
+    padding: 0 50px;
+}
+
+#noSeatLeft {
+    margin-top:-50px;
+    text-align: center;
+    font-size: 22px;
+}
+
+
+#details{
+    background-color: #0702023b;
+    height:auto;
+    padding-bottom: 50px;
+}
+#details:hover{
+    cursor: auto;
+    background-color: #0702023b;
+}
+
+
+
+#img{
+    width:100%;
+    height:100%;
+}
+.box{
+    border: 1px solid black;
+    height:250px;
+    display: block;
+}
+.infoContainer{
+    height:auto;
+    margin:50px auto 20px auto;
+    width:95%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap:15px;
+
+}
+#img-div{
+    height:auto;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+/*The First Detail Div in Screening*/
+#detail-div{
+    border:1px solid rgba(128, 128, 128, 0.71);
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+/*The first Detail div in screening is
+divided in two, and set as grid with 2 columns
+*/
+#detail-div div {
+    display: grid;
+    padding:25px 0;
+    grid-auto-flow: row;
+    align-items: center;
+}
+th{
+    height:35px;
+    border:1px solid #fff;
+    background-color: rgb(94, 93, 93);
+    color:#000;
+
+}
+#detail-div label{
+    width:80%;
+    height:30px;
+    margin:0 auto;
+    padding:5px;
+
+}
+#description-div{
+    padding:15px 5px;
+    border:1px solid rgba(128, 128, 128, 0.71);
+}
+
+#description-div div:nth-child(2) {
+    padding:20px;
+}
+
+h1{
+    font-size: 18px;
+}
+p{
+    text-align: justify;
+}
+
+
+.det-row:hover{
+    background: none;
+}
+.add-screening-form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding:25px;
+    row-gap: 15px;
+    font-size: 22px;
+}
+.add-screening-form select, option, input {
+    color:black;
+    padding:10px;
+}

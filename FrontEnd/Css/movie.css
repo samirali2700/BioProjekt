@@ -1,0 +1,150 @@
+/*  General */
+/*  Buttons */
+
+.add-movie-form{
+    padding:25px 50px;
+    margin-top:50px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-row-gap: 15px;
+    grid-auto-rows: 35px;
+    font-size: 22px;
+}
+#add-movie{
+    position:relative;
+    left:65%;
+}
+
+#save-btn{
+    width:75px;
+    padding:7px 0;
+    float:right;
+    color:black;
+    text-align: center;
+}
+#delete-btn{
+    width:110px;
+    padding:7px 0;
+    display: inline-block;
+    color:black;
+    text-align: center;
+}
+#delete-btn:hover, #save-btn:hover{
+    cursor:pointer;
+    background: rgba(146, 146, 146, 0.84);
+}
+
+/*  Main    */
+.movie-list{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 5px;
+}
+.movie-container{
+    width:100%;
+    height:600px;
+    box-shadow: 2px 3px rgba(0,0,0,0.2);
+
+}
+img{
+    display: block;
+    width:100%;
+    height:100%;
+}
+.image{
+    height:87.5%;
+}
+.info{
+    height:12.5%;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.32);
+    border:1px solid black;
+}
+.info p{
+    font-size: 22px;
+    position:relative;
+    top:25%;
+}
+
+.delete-movie{
+    position: relative;
+    top:55px;
+    width:100%;
+    height:55px;
+
+
+}
+#deleteBtnMovie {
+    background-image: url("../img/icons8-delete-48.png");
+    width: 48px;
+    height:48px;
+    margin:0 auto;
+    visibility: hidden;
+
+}
+#deleteBtnMovie:hover{
+    cursor:pointer;
+    transform: translateY(2%);
+}
+.delete-movie:hover{
+    background: rgba(2, 2, 2, 0.38);
+    border:1px solid black;
+}
+.delete-movie:hover #deleteBtnMovie {
+    visibility: visible;
+}
+
+/*  Extra   */
+
+.movie-container:hover{
+    transform:translateY(-1%);
+}
+img:hover{
+    cursor:pointer;
+}
+
+
+
+
+/*  Edit Movie  */
+
+#movieShowInfo{
+    width:100%;
+    height:500px;
+    padding:30px;
+}
+#movieImg{
+    width:240px;
+    height:350px;
+    display: inline-block;
+}
+#movieInfo{
+    margin-left:20px;
+    width:70%;
+    height:375px;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    position:relative;
+    top:-342px;
+    left:28%;
+    align-items: center;
+    grid-template-rows: 12.5% 12.5% 12.5% 12.5% 12.5% 27.5%;
+}
+
+#movieInfo input{
+    height:35px;
+}
+#description{
+    overflow: auto;
+    color:black;
+    padding:10px;
+    margin-top:5px;
+}
+#description:focus{outline:none;}
+
+#footer{
+    width:100%;
+    height:37px;
+    margin:-300px auto 0 auto;
+}
+

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Screening</title>
+    <link rel = "stylesheet" href = "../../Css/main.css">
+    <link rel = "stylesheet" href = "../../Css/screening.css">
+
+
+</head>
+<body>
+
+        <div class = "header">
+            <div id = "logo"><img src="https://thumbs.dreamstime.com/t/cinema-seven-colors-neon-text-moving-lights-transparent-background-cinema-seven-glowing-colors-neon-text-moving-lights-141720009.jpg
+" alt="Logo"></div>
+
+            <div class = "list">
+
+                <a  href ="../Movie/Movie.html">Movie</a>
+                <a id = "current" href ="Screening.html">Screening</a>
+                <a href ="../History/History.html">History</a>
+
+            </div>
+        </div>
+        <div class = "hero">
+            <div class ="hero-header">
+                <h1 id ="title">Active Screenings</h1>
+                <a class ="add-btn" id = "showExpiredScreening">Expired Screening</a>
+                <a class ="add-btn" href = "AddScreening.html" id = "add-screening">Add Screening</a>
+            </div>
+
+                <div class = "screening-table">
+                    <table id = "screening-table">
+                        <thead>
+                            <tr>
+                                <th id = "movieName">Movie Name</th>
+                                <th id = "screeningRoom">Room</th>
+                                <th id = "availableSeats">Available Seats</th>
+                                <th id = "totalSeats">Total Seats</th>
+                                <th id = "startTime">Start Time</th>
+                                <th id = "endTime">End Time</th>
+                                <th id = "screeningDate">Date</th>
+                                <th id = "sales">Sales</th>
+                                <th id = "prop"></th>
+                            </tr>
+                        </thead>
+                        <tbody id = "tbody">
+                        </tbody>
+                    </table>
+                </div>
+
+        </div>
+        <script src = "../../Js/screeningJs.js"></script>
+</body>
+</html>

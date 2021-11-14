@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Movie</title>
+    <link rel = "stylesheet" href = "../../Css/main.css">
+  <link rel = "stylesheet" href = "../../Css/movie.css">
+</head>
+<body>
+    <div class = "header">
+      <div id = "logo"><img src="https://thumbs.dreamstime.com/t/cinema-seven-colors-neon-text-moving-lights-transparent-background-cinema-seven-glowing-colors-neon-text-moving-lights-141720009.jpg
+" alt="Logo"></div>
+
+      <div class = "list">
+
+        <a id = "current" href ="Movie.html">Movie</a>
+        <a href ="../Screening/Screening.html">Screening</a>
+        <a href ="../History/History.html">History</a>
+
+      </div>
+    </div>
+    <div class = "hero">
+      <div class ="hero-header"><h1>Add Movie</h1></div>
+      <form id = "movie-form" action = "http://localhost:8080/saveMovie" method = "post">
+        <div class = "add-movie-form">
+          <label for = "movie_name">Movie Name</label><input type = "text" id = "movie_name" name = "movie_name" required>
+          <label for = "year">Year</label><input type = "number" id = "year" name = "year" required>
+          <label for = "description">Description</label><input type = "text" id = "description" name = "description" required>
+          <label for = "actors">Actors</label><input type = "text" id = "actors" name = "actors" required>
+          <label for = "duration">Duration</label><input type = "number" id = "duration" name = "duration" required>
+          <label for = "imgUrl">Cover Image Url</label><input type = "url" id = "imgUrl" name = "imgUrl" required>
+        </div>
+
+            <button class = "form-btn">Save Movie</button>
+
+      </form>
+    </div>
+    <script src = "../../Js/addMovieJs.js"></script>
+</body>
+</html>

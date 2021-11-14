@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Screening</title>
+    <link rel = "stylesheet" href = "../../Css/main.css">
+    <link rel = "stylesheet" href = "../../Css/screening.css">
+</head>
+<body>
+        <div class = "header">
+            <div id = "logo"><img src="https://thumbs.dreamstime.com/t/cinema-seven-colors-neon-text-moving-lights-transparent-background-cinema-seven-glowing-colors-neon-text-moving-lights-141720009.jpg" alt="Logo"></div>
+
+            <div class = "list">
+
+                <a  href ="../Movie/Movie.html">Movie</a>
+                <a id = "current" href ="Screening.html">Screening</a>
+                <a href ="../History/History.html">History</a>
+
+            </div>
+        </div>
+        <div class = "hero">
+            <div class = "hero-header">
+                <h1>Add Screening</h1>
+            </div>
+            <form id = "screening-form" action = "http://localhost:8080/saveScreening" method = "post">
+                <div class = "add-screening-form">
+                    <label for = "movieDropDown">Movie</label><select id = "movieDropDown"></select>
+                    <label for = "room">Room</label><input type = "number" name = "room" id ="room" required>
+                    <label for = "seats">Seats</label><input type = "number" name = "seats" id = "seats" required>
+                    <label for = "date">Date</label><input type = "date" name ="date" id = "date" required>
+                    <label for = "startTime">Start Time</label><input type = "time" name = "startTime" id = "startTime" required>
+                </div>
+                <div id ="footer">
+                    <button class = "form-btn">Save Screening</button>
+                </div>
+
+            </form>
+
+            </div>
+        </div>
+        <script src = "../../Js/addScreening.js"></script>
+</body>
+</html>

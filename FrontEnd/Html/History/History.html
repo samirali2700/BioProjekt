@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>History</title>
+  <link rel = "stylesheet" href = "../../Css/main.css">
+  <link rel = "stylesheet" href = "../../Css/history.css">
+</head>
+<body>
+  <div class = "header">
+    <div id = "logo"><img src="https://thumbs.dreamstime.com/t/cinema-seven-colors-neon-text-moving-lights-transparent-background-cinema-seven-glowing-colors-neon-text-moving-lights-141720009.jpg" alt="Logo"></div>
+    <div class = "list">
+
+      <a  href ="../Movie/Movie.html">Movie</a>
+      <a  href ="../Screening/Screening.html">Screening</a>
+      <a  id = "current" href ="History.html">History</a>
+
+    </div>
+  </div>
+  <div class = "hero">
+    <div class ="hero-header">
+      <h1>History</h1>
+      <div class = "footer">
+        <p><b>View History for:</b></p>
+        <button class = "view-btn" id = "movieBtn">Movies</button>
+        <button class = "view-btn" id = "screeningBtn">Tickets</button>
+
+        <div class = "search-bar">
+          <input name = "searchBar" type = "number" id = "searchBar" oninput = "inputSearchBar()" >
+        </div>
+      </div>
+    </div>
+      <div class = "history-table">
+        <table id = "ticket-table">
+          <thead id = "thead">
+
+          </thead>
+          <tbody id = "tbody">
+
+          </tbody>
+        </table>
+      </div>
+    </div>
+<script src = "../../Js/historyJs.js"></script>
+
+</body>
+</html>
